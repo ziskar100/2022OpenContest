@@ -15,9 +15,13 @@ Round_About_Energy, “RAE”
 Ως υλικά hardware χρησιμοποιoύνται:
 
 1. Για τον σχεδιασμό και κατασκευή του project RAE:
+
 Boards (πλακέτες)  [~32€]
+
 1 x Arduino UNO plus
+
 1 x V5 shield (ασπίδα για το Arduino)
+
 1 x L298N (Dual Stepper Motor Driver για τον servo κινητήρα)
 
 Car items  [~13€]
