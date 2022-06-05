@@ -24,23 +24,39 @@ Round_About_Energy, “RAE”
 -Dual Motor Driver Module L298N (Χ1)
 
 -Waveshare Ανιχνευτής Ακολουθίας Γραμμής - 5-Channels (Χ2)
+
 -Rocker Switch ON-ON DPDT 15A/250VAC - Medium Black (Χ2)
+
 -Πλαστική Διπλή Θήκη για Μπαταρίες 18650 (Χ2)
+
 -Μπαταρία Λιθίου 18650 3.7V - 2600mAh XTAR (Χ4)
+
 -Metal Gearmotor 25mm - 30 RPM 6V (Χ1) (κινητήρας για την παραγωγή ηλεκτρικής ενέργειας)
+
 -Round Magnet - 8x2mm (X18)
+
 -Μυτοτσίμπιδο 160mm - Workpro
+
 -Κατσαβίδια Ηλεκτρονικών Set 6τμχ. PK-2062
+
 -Alligator Clip 28mm for Soldering - Black
+
 -Μονωτική Ταινία PVC 15mm 10m - Πακέτο 10 Χρωμάτων
+
 -L293D Motor Driver Shield - Expansion Board For Arduino (Χ2)
+
 -9v Battery Holder With On/Off Power Switch (Χ2)
+
 -Four Channel Infrared Detector Sensor For Arduino (Χ2)
+
 -VARTA 4922 ΑΛΚΑΛΙΚΗ LONGLIFE POWER - 9V (Χ4)
+
 -1x Filament for 3D Printer
  
 Τα περιβάλλοντα που χρησιμοποιήθηκαν είναι τα παρακάτω:
+
 -Περιβάλλον προγραμματισμού Arduino IDE 1.8.12(ελεύθερο λογισμικό)
+
 -Περιβάλλον τεμαχισμού (slicing) αντικειμένων Cura (τελευταία έκδοση, ελεύθερο λογισμικό)
 -Περιβάλλον σχεδιασμού αντικειμένων https://www.blockscad3d.com/ (online ελεύθερο λογισμικό)
 Τα εργαλεία που χρησιμοποιήθηκαν είναι τα παρακάτω:
