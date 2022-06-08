@@ -38,7 +38,7 @@ void loop(){
   analogWrite(ENA, ENASpeed);
   analogWrite(ENB, ENBSpeed);
 
-  //Διάβασμα του σένσορα αν HIGH (Μαύρη Γραμμή) or LOW (Άσπρη Γραμμή)
+  //Διάβασμα του σένσορα αν HIGH (Μαύρη Γραμμή) ή LOW (Άσπρη Γραμμή)
   Sensor1 = digitalRead(8);
   Sensor2 = digitalRead(9);
   Sensor3 = digitalRead(10);
