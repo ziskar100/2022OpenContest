@@ -72,7 +72,7 @@ void loop(){
 
   else{
 
-    if(Sensor4 == LOW && Sensor3 == HIGH && Sensor2 == HIGH && Sensor1 == LOW
+    //if(Sensor4 == LOW && Sensor3 == HIGH && Sensor2 == HIGH && Sensor1 == LOW
 
     //Ευθεία
     //Μότορας Α Μπροστά
