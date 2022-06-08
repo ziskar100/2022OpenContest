@@ -1,12 +1,12 @@
-int ENA = 3; //Enable Pin of the Right Motor (must be PWM)
-int IN1 = 1; //Control Pin
-int IN2 = 2;
+int ENA = 3; //Pin ενεργοποίησης δεξιού μότορα
+int IN1 = 1; //Pin Ελέγχου
+int IN2 = 2; //Pin Ελέγχου
 
-int ENB = 6; //Enable Pin of the Left Motor (must be PWM)
-int IN3 = 4;
-int IN4 = 5;
+int ENB = 6; //Pin ενεργοποίησης Αριστερού Μότορα (must be PWM)
+int IN3 = 4; //Pin Ελέγχου
+int IN4 = 5; //Pin Ελέγχου
 
-//Speed of the Motors
+//Ταχήτυτα Μότορων //(τιμές από 0 εως 255)
 #define ENASpeed 120 
 #define ENBSpeed 120
 
@@ -34,49 +34,51 @@ void setup() {
 
 void loop(){
 
-  //Use analogWrite to run motor at adjusted speed
+  //Χρησιμοποιούμε το analogWrite για να τρέξουμε τους μότορες στην επιλεγμένη ταχύτητα
   analogWrite(ENA, ENASpeed);
   analogWrite(ENB, ENBSpeed);
 
-  //Read the Sensor if HIGH (BLACK Line) or LOW (WHITE Line)
+  //Διάβασμα του σένσορα αν HIGH (Μαύρη Γραμμή) or LOW (Άσπρη Γραμμή)
   Sensor1 = digitalRead(8);
   Sensor2 = digitalRead(9);
   Sensor3 = digitalRead(10);
   Sensor4 = digitalRead(11);
 
-  //Set conditions for FORWARD, LEFT and RIGHT
+  //Συνθήκες για Ευθεία, Αριστερά and Δεξιά
 
   if(Sensor4 == HIGH && Sensor3 == HIGH && Sensor2 == LOW && Sensor1 == LOW){
 
-    //Turn LEFT
-    //motor A Backward
+    //Στρίψε αριστερά
+    //Μότορας Α Πίσω
     digitalWrite(IN1, LOW);
     digitalWrite(IN2, HIGH);
 
-    //motor B Forward
+    //Μότορας Β Μπροστά
     digitalWrite(IN3, HIGH);
     digitalWrite(IN4, LOW);
   }
 
   else if (Sensor4 == LOW && Sensor3 == LOW && Sensor2 == HIGH && Sensor1 == HIGH){
 
-    //Turn RIGHT
-    //motor A Forward
+    //Στρίψε Δεξιά
+    //Μότορας Α Μπροστά
     digitalWrite(IN1, HIGH);
     digitalWrite(IN2, LOW);
 
-    //motor B Backward
+    //Μότορας Β Πίσω
     digitalWrite(IN3, LOW);
     digitalWrite(IN4, HIGH);
   }
 
   else{
 
-    //if(Sensor4 == LOW && Sensor3 == HIGH && Sensor2 == HIGH && Sensor1 == LOW
+    if(Sensor4 == LOW && Sensor3 == HIGH && Sensor2 == HIGH && Sensor1 == LOW
 
-    //FORWARD
+    //Ευθεία
+    //Μότορας Α Μπροστά
     digitalWrite(IN1, LOW);
     digitalWrite(IN2, HIGH);
+    //Μότορας Β Μπροστά
     digitalWrite(IN3, LOW);
     digitalWrite(IN4, HIGH);
   }
